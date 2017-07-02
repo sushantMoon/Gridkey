@@ -38,7 +38,7 @@ The following are some of our results.
 
 ## Note : 
 
-1. The weights obtained after training the model are [tiny-yolo.weights](https://drive.google.com/file/d/0B8b_yIDEINATbHFtSk1XRVMzVE0/view?usp=sharing) (181 Mb). They are to be downloaded and used.
+1. The weights obtained after training the model are [tiny-yolo.weights](https://drive.google.com/open?id=0B8b_yIDEINATbHFtSk1XRVMzVE0) (181 Mb). They are to be downloaded and used.
 2. For the images we would have to resize them , one can use command like `mogrify -resize 1280x720 *.jpg` to in place resize the images [Reference](https://askubuntu.com/a/25134)
 
 

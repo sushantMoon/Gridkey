@@ -42,11 +42,19 @@ The following are some of our results.
 2. For the images we would have to resize them , one can use command like `mogrify -resize 1280x720 *.jpg` to in place resize the images [Reference](https://askubuntu.com/a/25134)
 
 
-
-
 # Future Works for building this prototype into Traffic Optimisation problem.
 
 	* Training the model further for Bike, Cab and partial Image detection.
 	* Developing the network graph of traffic data, eg. Like simple count of total vechiles on any signal, taking them as weights on that node(traffic signal) with roads as edges connecting to another node(traffic signal).
 	* We shall be then solving network optimization problem at any given instance for calculating the most optimal timings for the signals.
 	* More features like speed detection, number plate detection, helmet & seat beat detections, etc, can be further added.  
+
+
+
+
+
+# Personal Verdict :
+
+* We were selected within Top 35 teams with this project.
+* Algorithm performance was poor as we were not able to bring out the total efficiency of the YOLO model. More fine tuning, understanding of the model, keras and above alldedicated effort is required.
+* This project will be on hold till my schedule and time permits.

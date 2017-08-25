@@ -18,7 +18,8 @@ submission/
 cfg/
 darknet
 .fuse*
-cfg/yolo.weights
+weights/
+.ipynb_checkpoints/
 
 # OS Generated #
 .DS_Store*

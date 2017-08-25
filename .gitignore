@@ -1,6 +1,5 @@
 Car-Detection/.ipynb_checkpoints
-Car-Detection/tiny-yolo.weights
+Car-Detection/tiny-yolo.mod.weights
 Car-Detection/Output/
 Car-Detection/Testing/Videos/
 OpenCV/l_tbb_2017.6.196/
-Yolo/darknet/

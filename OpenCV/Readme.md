@@ -79,11 +79,13 @@ mv opencv_contrib-3.3.0 opencv_contrib
 
 ## Namespace Defination added for handling Tesseract -
 
-** Update (25 Aug 2017)**
+-------------------------------------------------------------------
+**Update (25 Aug 2017)**
 
-This makes the following edit redundant and we can proceed directly for Building OpenCV
-__[OpenCV Contrib Pull Request 1337 has been merged](https://github.com/opencv/opencv_contrib/pull/1337)__
+**[OpenCV Contrib Pull Request 1337 has been merged](https://github.com/opencv/opencv_contrib/pull/1337)**
 
+This makes the following edit redundant and we can proceed directly for Building OpenCV.
+-------------------------------------------------------------------
 
 Hopefully This shall be addressed in the future updates on Tesseract/OpenCV_contrib and would be not needed. 
 

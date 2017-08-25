@@ -41,8 +41,15 @@ cd /media/feliz/Safira/GitHub/GridKey/OpenCV
 
 ## Python Env :
 
-```sh
+Optionally Create a Virtualenv 
+```
 mkvirtualenv gridkey
+```
+
+
+Whatever Env you choose it should have `numpy` Installed.
+
+```sh
 pip install numpy
 ```
 
@@ -71,6 +78,12 @@ mv opencv_contrib-3.3.0 opencv_contrib
 ```
 
 ## Namespace Defination added for handling Tesseract -
+
+** Update (25 Aug 2017)**
+
+This makes the following edit redundant and we can proceed directly for Building OpenCV
+__[OpenCV Contrib Pull Request 1337 has been merged](https://github.com/opencv/opencv_contrib/pull/1337)__
+
 
 Hopefully This shall be addressed in the future updates on Tesseract/OpenCV_contrib and would be not needed. 
 
@@ -123,10 +136,17 @@ cmake -DCMAKE_CXX_FLAGS=-std=c++14 \
     -DBUILD_SHARED_LIBS=ON \
     -DENABLE_CXX11=ON \
     -DOPENCV_EXTRA_MODULES_PATH=/media/feliz/Safira/GitHub/Gridkey/OpenCV/opencv_contrib/modules \
-    -DPYTHON_EXECUTABLE=/home/feliz/.envs/gridkey/bin/python ..
+    -DPYTHON_EXECUTABLE=/usr/bin/python ..   
 ```
 
+The Last line should be replaced with the following if virtual env is not used
+```
+-DPYTHON_EXECUTABLE=/home/feliz/.envs/gridkey/bin/python
+```
+
+
 Check for any errors in this `cmake`
+Also check for what allcompilers has the OpenCV detected , for Python if both versions are present (2.7,3.5) it shall compile for both 
 
 Note:  any one of the above 2 versions can be installed at any given time.
 
@@ -161,10 +181,12 @@ Then Run :
 sudo ldconfig
 ```
 
+If using Virtual Env
+
 The Final Compiled `.so` for this system is placed at 
 
 ```sh
- ls -l /usr/local/lib/python2.7/site-packages/
+ls -lah /usr/local/lib/python2.7/site-packages/
 ```
 
 This compiled `.so` is to be placed inside the virtual environment file.
@@ -173,6 +195,15 @@ This compiled `.so` is to be placed inside the virtual environment file.
 cd ~/.envs/gridkey/lib/python2.7/site-packages/
 ln -s /usr/local/lib/python2.7/site-packages/cv2.so cv2.so
 ```
+
+If using System Python
+
+The Final `.so` files would be at 
+```sh
+ls -lah /usr/local/lib/python2.7/dist-packages/
+ls -lah /usr/local/lib/python3.5/dist-packages/
+```
+We can Copy these for virtualEnv too if those virtualenv copy the system installed python for creating virtualenv. 
 
 Now Opencv is all set for this environment
 

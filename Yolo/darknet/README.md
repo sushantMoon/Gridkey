@@ -1,3 +1,15 @@
+# Changes :
+
+Followig the Symbol Table Extracted for the Shared Library File that was generated, I made an attempt at writing a python interface to the functions. It can be further extended to get a proper functioning library/script.
+
+Script : 
+[YoloModel-Notebook.ipynb](https://github.com/sushantMoon/Gridkey/blob/master/Yolo/darknet/YoloModel-Notebook%20.ipynb)
+
+
+
+
+
+# From Official Darknet Repo 
 ![Darknet Logo](http://pjreddie.com/media/files/darknet-black-small.png)
 
 #Darknet#

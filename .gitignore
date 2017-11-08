@@ -3,3 +3,5 @@ Car-Detection/tiny-yolo.mod.weights
 Car-Detection/Output/
 Car-Detection/Testing/Videos/
 OpenCV/l_tbb_2017.6.196/
+*.mp4
+*.jpg
